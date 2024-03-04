@@ -459,8 +459,14 @@ form .send-btn:hover{
 
 /* Responsivenes s*/
 @media (max-width: 991px){
+
+  img .logo{
+    width: 90%;
+    padding: 0rem;
+  }
+
   header {
-    padding: 18px 4%;
+    padding: 50px 2%;
   }
   section{
     padding: 50px 4%;
@@ -482,7 +488,7 @@ form .send-btn:hover{
 }
 @media (max-width: 768px){
   header{
-    padding: 11px 4%;
+    padding: 11px 2%;
   }
   #menu-icon{
     display: initial;
@@ -539,7 +545,7 @@ form .send-btn:hover{
     font-size: 1rem;
   }
   .btn{
-    padding: 0.6rem 1.7rem;
+    padding: 0.6rem 0rem;
   }
   .about-title h1  {
     font-size: 1.4rem;
