@@ -447,6 +447,7 @@ form .send-btn:hover{
   .mission .mission-container,
   .vision .vision-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .mission .mission-container .content,
