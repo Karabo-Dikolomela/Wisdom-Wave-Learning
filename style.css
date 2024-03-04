@@ -201,13 +201,13 @@ header.shadow{
 .services-container{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
-  gap: 15rem;
-  margin-top: 5rem;
+  gap: 8rem;
+  margin-top: 2rem;
 }
 .services-container .box {
   text-align: center;
   border: 2px solid var(--text-color);
-  padding: 20px;
+  padding: 10px;
   border-radius: 0 2rem 0 2rem;
   box-shadow: 10px 11px 11px rgb(14 55 54 / 15%);
 }
@@ -233,113 +233,7 @@ header.shadow{
   color: var(--text-color);
   transition: 0.2s;
 }
-/* .mission-container{
-  display: flex;
-  grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-  color: var(--text-color-two);
-}
-.mission-container .content{
-  position: relative;
-  height: 820px;
-  box-shadow: 10px 11px 11px rgb(14 55 54 / 15%);
-  overflow: hidden;
-  border-radius: 0.5rem;
-}
-.mission-container .box .box-img{
-  width: 200px;
-  height: 20px;
-}
-.mission-container .box .box-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.mission-container .box .content{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.mission-container .box .content .bx{
-  padding: 10px;
-  font-size: 24px;
-  border-radius: 4px;
-  background: #fff;
-  color: #fff;
-}
-.mission-container .box .content h3{
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 10px;
-}
-.mission-container .box:hover .content{
-  top: 0;
-  transition: 0.2s;
-}
 
-
-
-.vision-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
-  gap: 15rem;
-  margin-top: 10rem;
-  color: var(--text-color-two);
-}
-.vision-container .content {
-  position: fixed;
-  height: 820px;
-  box-shadow: 10px 11px 11px rgb(14 55 54 / 15%);
-  overflow: hidden;
-  border-radius: 0.5rem;
-}
-.vision-container .box .box-img{
-  width: 100%;
-  height: 100%;
-}
-.vision-container .box .box-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.vision-container .box .content{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.vision-container .box .content .bx{
-  padding: 10px;
-  font-size: 24px;
-  border-radius: 4px;
-  background: #fff;
-  color: #fff;
-}
-.vision-container .box .content h3{
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 10px;
-}
-.vision-container .box:hover .content{
-  top: 0;
-  transition: 0.2s;
-} */
 .contact-form{
   display: flex;
   align-items: center;
@@ -442,21 +336,6 @@ form .send-btn:hover{
   width: 60%; /* Adjust as needed */
 }
 
-/* For smaller screens, adjust layout to stack images and content */
-@media screen and (max-width: 768px) {
-  .mission .mission-container,
-  .vision .vision-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mission .mission-container .content,
-  .vision .vision-container .content,
-  .mission .mission-container .box-img,
-  .vision .vision-container .box-img {
-    width: 100%; /* Occupy full width on smaller screens */
-  }
-}
 
 /* Responsivenes s*/
 @media (max-width: 991px){
@@ -472,6 +351,27 @@ form .send-btn:hover{
   section{
     padding: 50px 4%;
   }
+  header {
+    padding: 50px 2%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+ .home-img{
+  max-width: 100%;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+ }
+ .mission-container {
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center; /* Center align text */
+  width: 90%;
+}
+.box-img {
+  margin-bottom: 20px; /* Add some space between image and text */
+} 
+
 }
 @media (max-width: 881px){
   .home-text span{
@@ -486,6 +386,16 @@ form .send-btn:hover{
   .home-text p{
     font-size: 0.938rem;
   }
+  .home-img {
+    max-width: 90%;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.mission-container {
+  padding: 15px; /* Adjust padding */
+  width: 80%;
+}
 }
 @media (max-width: 768px){
   header{
@@ -532,27 +442,55 @@ form .send-btn:hover{
   .home-text p br{
     display: contents;
   }
-}
-@media (max-width: 618px){
-  .home-img {
-    padding: 10px;
+
+  .mission .mission-container,
+  .vision .vision-container {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .mission .mission-container .content,
+  .vision .vision-container .content,
+  .mission .mission-container .box-img,
+  .vision .vision-container .box-img {
+    width: 100%;
+    width: 70%;
+  height: auto;
+  }
+
+  .home-img {
+    max-width: 80%;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.mission-container {
+  padding: 10px; /* Further reduce padding */
+  width: 70%;
+}
 }
 
-My apologies for the oversight. Let's make the necessary adjustments for responsiveness. Here's the updated CSS:
 
-css
-Copy code
+
 /* style.css */
 
 /* Adjust layout for smaller screens */
 .mission .mission-container .box-img,
-.vision .vision-container .box-img,
 .about-img img,
 .home-img img {
   width: 100%; /* Make images fill the container width */
-  max-width: 300px; /* Set a maximum width for larger screens */
+  max-width: 350px; /* Set a maximum width for larger screens */
   height: auto; /* Maintain aspect ratio */
+}
+
+.mission .box-img img{
+  display: block;
+  padding-block: 5px;
+  /* width: 300px; */
+  padding-right: 220px;
+  padding-left: 1px;
+  height: auto;
+  max-width: 500px;
 }
 
 .mission .mission-container .content,
@@ -562,73 +500,23 @@ Copy code
   width: 100%; /* Make text content fill the container width */
 }
 
-/* Stack images and text content on smaller screens */
-@media screen and (max-width: 768px) {
-  .mission .mission-container,
-  .vision .vision-container,
-  .about,
-  .home {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+
+
+@media screen and (max-width: 618px) {
+  .home-img {
+    max-width: 100%;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 5px;
   }
 
-  .mission .mission-container .box-img,
-  .vision .vision-container .box-img,
-  .about-img img,
-  .home-img img {
-    max-width: none; /* Remove max-width on smaller screens */
+  .logo img{
+    width: 80%;
+    height: 55px;
   }
-}
 
-/* Adjust padding and font sizes for smaller screens */
-@media screen and (max-width: 991px) {
-  header {
-    padding: 50px 2%;
-  }
-  section {
-    padding: 50px 4%;
-  }
-}
-
-@media screen and (max-width: 881px) {
-  .home-text span {
-    font-size: 1.1rem;
-  }
-  .home-text h1 {
-    font-size: 3rem;
-  }
-  .home-text h2 {
-    font-size: 1.2rem;
-  }
-  .home-text p {
-    font-size: 0.938rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    padding: 11px 2%;
-  }
-  #menu-icon {
-    display: initial;
-  }
-  header .navbar {
-    position: absolute;
-    top: -500px;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.2s ease;
-    text-align: left;
-  }
-  .navbar.active {
-    top: 100%;
-  }
   .navbar a {
-    padding: 1rem;
+    padding: 0.5rem;
     border-left: 2px solid var(--text-color);
     margin: 1rem;
     display: block;
@@ -638,24 +526,28 @@ Copy code
     background: var(--text-color);
     border: none;
   }
-  .home-text span {
-    font-size: 1rem;
-  }
-  .home-text h1 {
-    font-size: 2.4rem;
-  }
-  .home-text h2 {
-    font-size: 1.1rem;
-  }
-  .home-text p br {
-    display: contents;
-  }
-}
 
-@media screen and (max-width: 618px) {
-  .home-img {
-    padding: 10px;
+  .mission .mission-container,
+  .vision .vision-container, 
+  .about,
+  .home {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 50px;
+    width: 100%;
   }
+
+  .mission .mission-container .box-img,
+  .vision .vision-container .box-img .content
+   {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+
+  }
+  html, body {
+    overflow-x: hidden;
+}
 }
 
 @media screen and (max-width: 350px) {
@@ -680,4 +572,27 @@ Copy code
   p {
     font-size: 0.938rem;
   }
+
+  .mission-container {
+    padding: 0; /* Remove padding */
+    width: 60%;
+  }
+  .content p {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .home-img {
+    max-width: 60%;
+}
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+html, body {
+  overflow-x: hidden;
+}
 }
